@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Let's go."
+        android:textColor="@android:color/white"
+        android:textSize="51sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_main_message"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_message"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_message" />
+
+    <TextView
+        android:id="@+id/tv_main_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text=" If you're an artist or part of their management team, \nwe'll show you how to get the most out of Spotify."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_get_access_shape"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="sans-serif"
+        android:text="Get Access"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_message"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_message"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_message"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rounded_button"/>
+
+</android.support.constraint.ConstraintLayout>
